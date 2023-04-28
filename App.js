@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, Image, SafeAreaView, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, Image, SafeAreaView, TouchableOpacity, Button } from 'react-native';
 
 // View --> UIView
 export default function App() {
@@ -22,6 +22,10 @@ export default function App() {
 
 source={require('./assets/ll.png')}/>
 </TouchableOpacity>
+      <Button  
+        color="#f194ff"
+        title="Fajr" 
+        onPress={() => console.log("Button Pressed")}/>
       <StatusBar style="auto" />
     </SafeAreaView>
   );
