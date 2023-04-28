@@ -15,7 +15,8 @@
     "react-native": "0.71.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "prettier": "2.8.8"
   },
   "private": true
 }
