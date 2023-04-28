@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, Image, SafeAreaView, TouchableOpacity, Button } from 'react-native';
+import { StyleSheet, Text, Image, SafeAreaView, TouchableOpacity, Alert, Button } from 'react-native';
 
 // View --> UIView
 export default function App() {
@@ -23,9 +23,14 @@ export default function App() {
 source={require('./assets/ll.png')}/>
 </TouchableOpacity>
       <Button  
-        color="#f194ff"
-        title="Fajr" 
-        onPress={() => console.log("Button Pressed")}/>
+        color="black"
+        title="Fajr Time" 
+        onPress={() => Alert.alert("Adhan API", "Akhira Labs team is working hard to bring the audit & test the PrayerTimes App, free from Ads!, Spyware! and Data harvesting!!", [
+          { text: "Sign up for Beta", onPress: () => console.log("Beta Pressed")},
+          { text: "Cancel", onPress: () => console.log("Cancel Pressed")},
+        ])
+        }
+        />
       <StatusBar style="auto" />
     </SafeAreaView>
   );
